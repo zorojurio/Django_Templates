@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head_title %}
+
+{% endblock head_title %}
+
+{% block meta_description %}
+
+{% endblock %}
+
+{% block keywords %}
+
+{% endblock %}
+
+{% block extra_head %}
+<meta name="robots" content="all">
+{% endblock %}
+
+{% block fb_meta %}
+<meta property="fb:app_id" content="" />
+<meta property="og:title" content="">
+<meta property="og:type" content="website" />
+<meta property="og:description" content="" />
+<meta property="og:url" content="{{request.build_absolute_uri}}" />
+<meta property="og:image" content="http://{{request.get_host}}{{latest_one_product.get_item_image_url}}">
+<meta property="og:image:secure_url" content="https://{{request.get_host}}{{latest_one_product.get_item_image_url}}">
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="og:image:alt" content="" />
+{% endblock %}
+
+{% block content %}
+
+{% endblock content %}
